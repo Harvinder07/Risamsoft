@@ -77,8 +77,14 @@ div[class*=circle]{
 }
 .slider.slider-single .slick-dots li button{
     border: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--grey);
+    background: transparent;    
+}
+.slider.slider-single .slick-dots li.slick-active button{
     color: var(--themeColor);
-    background: transparent;
+    font-weight: 900;
 }
 .slider.slider-single .slick-dots li button::before {
     content: "0";
