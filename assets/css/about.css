@@ -1,0 +1,69 @@
+.navbar .container-fluid{
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.container-fluid{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+[class*='col']{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.abt-banner{
+    background-color: var(--themeColor);
+}
+.policies{
+    background: var(--themeColor);
+}
+.policy{
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+.policy img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.content{
+    background: rgba(13, 116, 176, 0.6);
+    border-radius: 12px;
+    position: relative;
+    padding: 40px;
+    right: -40px;
+    width: 420px;
+}
+
+.image img{
+    width: 100%;
+    height: 620px;
+    object-fit: cover;
+    border-radius:  50px 200px 50px 50px;
+}
+
+@media(max-width: 1180px){
+    [class*='col'], .container-fluid{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+@media(max-width: 767px){
+    .banner{
+        margin: 0 -16px;
+        position: relative;
+    }
+    .content{
+        position: absolute;
+        height: 100%;
+        top: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    .image img{
+        border-radius: 0;
+        height: 100%;
+    }
+}

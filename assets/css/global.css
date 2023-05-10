@@ -22,6 +22,12 @@ a{
     text-decoration: none;
     display: block;
 }
+.text-theme{
+    color: var(--themeColor);
+}
+.navbar-brand > img{
+    width: 200px;
+}
 .navbar-expand-lg .navbar-nav .nav-link{
     padding: 24px;
     color: #000;
@@ -92,23 +98,87 @@ a{
 .relative{
     position: relative;
 }
+/**** flex ****/
+.flex{
+    display: flex;
+}
+.aic{
+    align-items: center;
+}
+.jcsb{
+    justify-content: space-between;
+}
+.jcc{
+    justify-content: center;
+}
 
+/**** PROCESS ****/
+.process{
+    position: relative;
+}
+.process-overlay{
+    top: 43%;
+    left: 50%;
+    width: 65%;
+    padding: 40px 40px;
+    position: absolute;
+    text-align: center;
+    border-radius: 10px;
+    backdrop-filter: blur( 9px );
+    transform: translate(-50%, -50%);
+    background: rgba( 38, 184, 235, 0.75 );
+    box-shadow: 0px 0px 15px 10px rgba( 38, 184, 235, 0.75 );
+}
+.process-slider .slick-prev {
+    border: 1px solid var(--themeColor);
+    background-color: transparent;
+    color: var(--themeColor);
+    position: absolute;
+    padding: 10px;
+    bottom: -15px;
+    left: 20%;
+}
+.process-slider .slick-next {
+    border: 1px solid var(--themeColor);
+    background-color: var(--themeColor);
+    color: var(--white);
+    position: absolute;
+    padding: 10px;
+    bottom: -15px;
+    right: 20%;
+    
+}
+.process-slider .slick-dots {
+    justify-content: center;
+    margin: 60px auto;
+    display: flex;
+}
+.process-slider .slick-dots li button{
+    height: 4px;
+    width: 100px;
+    border: none;
+    font-size: 0;
+    margin: 0 10px;
+    border-radius: 20px;
+    background: var(--grey);
+}
+.process-slider .slick-dots li.slick-active button{
+    background: var(--themeColor);
+}
+.process-slider.slick-initialized .slick-slide.relative{
+    flex-direction: column;
+}
 /**** footer ****/
 .footer{
     width: 100%;
     height: 100%;
     position: relative;
-    background: url(../images/footer.jpg) center /cover no-repeat;
+    background: url(../images/footer.svg) center /cover no-repeat;
 }
 .footer-overlay{
-    background: rgba(0,0,0,.65);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-    content: '';
-    left: 0;
-    top: 0;
+    background: rgba(0,0,0,.8);
+    border-radius: 24px;
+    padding: 30px 60px;
 }
 .footer .container-fluid{
     position: relative;
@@ -117,11 +187,7 @@ a{
 .footer  img{
     width: 180px;
 }
-.about{
-    padding: 40px;
-    border-radius: 16px;
-    background-color: rgba(37, 37, 60, .85);
-}
+
 .about p{
     color: var(--white);
     line-height: 1.5;
@@ -184,6 +250,9 @@ a{
 .p-0{
     padding: 0;
 }
+.p-60{
+    padding: 60px;
+}
 .p-l-0{
     padding-left: 0;
 }
@@ -193,14 +262,87 @@ a{
 .p-b-60 {
     padding-bottom: 60px;
 }
+.p-x-16{
+    padding: 0 16px;
+}
+.gap-12{
+    gap: 12px;
+}
+
+div > .img-fluid{
+    height: 620px;
+    object-fit: cover;
+}
+
+/* subscription */
+.subs-image{
+    position: relative;
+}
+.image-overlay{
+    background-color: rgba(0, 0, 0, .75);
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.image-overlay .section-heading{
+    text-transform: uppercase;
+    white-space: pre-line;
+}
+.image-overlay p i{
+    margin-right: 10px;
+    font-size: 28px;
+}
+.image-overlay p{
+    font-size: 24px;
+    font-weight: var(--normal);
+    color: var(--white);
+}
+.sub_text{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: url(../images/doted.gif) right / contain no-repeat;
+}
+.sub_text .section-heading{
+    text-transform: uppercase;
+    color: var(--themeColor);
+    white-space: pre-line;
+    text-align: center;
+    margin: 0 auto;
+}
+.email-input{
+    border: 1px solid var(--grey);
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px;
+    height: 50px;
+    width: 50%;
+}
+::placeholder{
+    color: var(--grey);
+}
 
 @media(max-width: 1380px){
     .slick-slide img, .slick-slide img.img-fluid{
         width: 100%;
         height: 100%;
     }
+    .process-slider .slick-slide img{
+        height: 455px;
+    }
 }
 @media(max-width: 767px){
+    .mb-fdc{
+        flex-direction: column;
+    }
     .mb-m-t-40{
         margin-top: 40px;
     }
@@ -221,6 +363,34 @@ a{
     }
     .mb-p-b-30{
         padding-bottom: 30px;
+    }
+    .mb-p-16{
+        padding: 16px;
+    }
+    .footer-overlay{
+        padding: 16px;
+        border-radius: 8px;
+    }
+    .process-overlay{
+        width: 75%;
+    }
+    .process-slider .slick-dots{
+        margin: 30px auto;
+    }
+    .process-slider .slick-dots li button{
+        width: 30px;
+    }
+    .process-slider .slick-next{
+        right: 16px;
+    }
+    .process-slider .slick-prev{
+        left: 16px;
+    }
+    .process-slider .slick-slide img{
+        height: 335px;
+    }
+    .footer{
+        padding: 30px 16px;
     }
     .navbar-toggler:focus{
         border: none;
@@ -262,5 +432,20 @@ a{
     }
     .footer-links ul li a{
         padding: 10px 0;
+    }
+    .image-overlay{
+        padding: 20px;
+    }
+    .image-overlay .section-heading,
+    .sub_text .section-heading{
+        width: 100%;
+    }
+    .email-input{
+        width: 100%;
+    }
+}
+@media(max-width: 525px){
+    .process-overlay{
+        width: 100%;
     }
 }

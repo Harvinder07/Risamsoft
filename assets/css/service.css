@@ -1,0 +1,8 @@
+.banner{
+    background: linear-gradient(to bottom, var(--themeColor) 55%, #fff 40%);
+}
+@media(min-width: 767px){
+    .image img{
+        height: 380px;
+    }
+}
