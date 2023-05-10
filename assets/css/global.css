@@ -238,6 +238,9 @@ a{
 .m-t-16{
     margin-top: 16px;
 }
+.m-t-20{
+    margin-top: 20px;
+}
 .m-t-40{
     margin-top: 40px;
 }
@@ -264,6 +267,9 @@ a{
 }
 .p-x-16{
     padding: 0 16px;
+}
+.p-24{
+    padding: 24px;
 }
 .gap-12{
     gap: 12px;
@@ -328,6 +334,20 @@ div > .img-fluid{
 }
 ::placeholder{
     color: var(--grey);
+}
+
+/****** banner for rest pages ******/
+.banner{
+    background: linear-gradient(to bottom, var(--themeColor) 55%, #fff 40%);
+}
+.note{
+    background-color: var(--themeColor);
+    padding: 40px;
+}
+.card{
+    border-radius: 20px;
+    box-shadow: 0 0 20px -7px rgba(0, 0, 0, .25);
+    border: none;
 }
 
 @media(max-width: 1380px){
@@ -443,7 +463,11 @@ div > .img-fluid{
     .email-input{
         width: 100%;
     }
+    .image img{
+        height: 380px;
+    }
 }
+
 @media(max-width: 525px){
     .process-overlay{
         width: 100%;
