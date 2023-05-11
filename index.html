@@ -26,19 +26,32 @@
                             <a class="nav-link" href="about.html">About Us</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
+                            <div class="dropdown">
+                                <button class="dropdown-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Services
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="services.html">Digital Transformation</a></li>
+                                  <li><a class="dropdown-item" href="#">Data Analytics & AI</a></li>
+                                  <li><a class="dropdown-item" href="#">Enterprise Application</a></li>
+                                  <li><a class="dropdown-item" href="#">Cloud & Infrastructure services(CIS)</a></li>
+                                  <li><a class="dropdown-item" href="#">Managed Services</a></li>
+                                  <li><a class="dropdown-item" href="#">Product Engineering</a></li>
+                                  <li><a class="dropdown-item" href="#">Technology Staffing</a></li>
+                                  <li><a class="dropdown-item" href="#">Professional staffing </a></li>
+                                  <li><a class="dropdown-item" href="#">outsourcing & consulting</a></li>
+
+                                </ul>
+                              </div>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Portfolio</a>
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Resources</a>
+                            <a class="nav-link" href="careers.html">Careers</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#">Careers</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="contact.html">Contact Us</a>
                           </li>
                         </ul>
                     </div>
@@ -58,7 +71,7 @@
                                     <button class="btn secondary">Our Story</button>
                                 </div>
                             </div>
-                            <div class="col-md-6 mb-m-t-20"><img src="./assets/images/banner-image.svg " /><img src="./assets/images/banner.gif " class="gifbanner" /></div>
+                            <div class="col-md-6 mb-m-t-20 relative"><img src="./assets/images/banner-image.svg " /><img src="./assets/images/banner.gif " class="gifbanner" /></div>
                         </div>
                         <div class="row">
                             <div class="col-md-6">
@@ -69,7 +82,7 @@
                                     <button class="btn secondary">Our Story</button>
                                 </div>
                             </div>
-                            <div class="col-md-6  mb-m-t-20"><img src="./assets/images/banner-image.svg " /><img src="./assets/images/banner.gif " class="gifbanner" /></div>
+                            <div class="col-md-6 relative mb-m-t-20"><img src="./assets/images/banner-image.svg " /><img src="./assets/images/banner.gif " class="gifbanner" /></div>
                         </div>
                     </div>
                 </div>
@@ -260,8 +273,8 @@
         <script>
             $(document).ready(function(){
                 $('.slick-slider').slick({
-                    autoplay: true,
-                    autoplaySpeed: 2000,
+                    // autoplay: true,
+                    // autoplaySpeed: 2000,
                     prevArrow: false,
                     nextArrow: false,
                     dots: true,

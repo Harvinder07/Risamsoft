@@ -1,1 +1,62 @@
 
+/*** SERVICE PAGE ****/
+.service-carousel-image{
+    height: 456px;
+    width: 100%;
+    object-fit: cover;
+}
+.slick-initialized .slick-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.themebg .slick-track{
+    display: flex;
+    align-items: center;
+}
+.name-slider{
+    padding: 16px;
+}
+.slick-next {
+    background: var(--themeColor);
+    color: var(--white);
+    padding: 12px 15px;
+    border: none;
+    right: -100px;
+}
+.slick-prev {
+    border: 1px solid var(--themeColor);
+    background: transparent;
+    color: var(--themeColor);
+    padding: 12px 15px;
+    left: -100px;
+}
+.slick-arrow{
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+}
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slick-dots li{
+    padding: 10px;
+}
+.name-slider .slick-current{
+    background: var(--secondaryColor);
+    color: var(--white);
+    text-align: center;
+    padding: 12px;
+}
+
+@media(max-width: 767px){
+    .page-banner-image,
+    .image img{
+        height: auto;
+    }
+    .name-slider{
+        margin: 0;
+    }
+}

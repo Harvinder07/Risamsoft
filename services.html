@@ -23,17 +23,31 @@
                             <a class="nav-link" href="index.html">Home</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active" href="about.html">About Us</a>
+                            <a class="nav-link" href="about.html">About Us</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
+                            <div class="dropdown">
+                                <button class="active dropdown-btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Services
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="services.html">Digital Transformation</a></li>
+                                  <li><a class="dropdown-item" href="#">Data Analytics & AI</a></li>
+                                  <li><a class="dropdown-item" href="#">Enterprise Application</a></li>
+                                  <li><a class="dropdown-item" href="#">Cloud & Infrastructure services(CIS)</a></li>
+                                  <li><a class="dropdown-item" href="#">Managed Services</a></li>
+                                  <li><a class="dropdown-item" href="#">Product Engineering</a></li>
+                                  <li><a class="dropdown-item" href="#">Technology Staffing</a></li>
+                                  <li><a class="dropdown-item" href="#">Professional staffing </a></li>
+                                  <li><a class="dropdown-item" href="#">outsourcing & consulting</a></li>
+
+                                </ul>
+                              </div>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link" href="portfolio.html">Portfolio</a>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="resources.html">Resources</a>
-                          </li>
+            
                           <li class="nav-item">
                             <a class="nav-link" href="careers.html">Careers</a>
                           </li>
@@ -53,7 +67,7 @@
                             <div class="banner y-p-60 mb-y-p-30 text-center">
                                 <h3 class="heading text-white">Service</h3>
                                 <div class="image m-t-40 mb-m-t-20">
-                                    <img src="./assets/images/service-banner.svg" />
+                                    <img src="./assets/images/service-banner.svg" class="page-banner-image"/>
                                 </div>
                             </div>
                         </div>
@@ -64,33 +78,98 @@
             <section class="services">
                 <div class="container-fluid y-p-60 mb-y-p-30 mb-p-b-0">
                     <div class="row">
-                        <div class="col-md-6">
-                            <h3 class="heading">Discover 
-                                our top-notch 
-                                services.
-                            </h3>
-                            <div class="slider slider-single">
-                                <h3 class="heading">01</h3>
-                                <h3 class="heading">02</h3>
-                                <h3 class="heading">03</h3>
-                                <h3 class="heading">04</h3>
+                        <div class="col-md-12">
+                            <div class="themebg name-slider">
+                                <div class="slider slider-nav text-center">
+                                    <h3 class="site-text text-white">Outsourcing & Consultin</h3>
+                                    <h3 class="site-text text-white">Enterprise Applicatio</h3>
+                                    <h3 class="site-text text-white">Digital Transformation</h3>
+                                    <h3 class="site-text text-white">Data Analitics & A</h3>
+                                    <h3 class="site-text text-white">Cloud & Infrastructure services(CIS)</h3>
+                                    <h3 class="site-text text-white">Digital Transformation</h3>
+                                    <h3 class="site-text text-white">Data Analitics & A</h3>
+                                    <!-- <input type="hidden" class="site-text text-white p-10" value="Outsourcing & Consultin" />
+                                    <input type="hidden" class="site-text text-white p-10" value="Enterprise Applicatio" />
+                                    <input type="hidden" class="site-text text-white p-10" value="Digital Transformatio" />
+                                    <input type="hidden" class="site-text text-white p-10" value="Data Analitics & A" />
+                                    <input type="hidden" class="site-text text-white p-10" value="Cloud & Infrastructure services(CIS)" />
+                                    <input type="hidden" class="site-text text-white p-10" value="Digital Transformatio" />
+                                    <input type="hidden" class="site-text text-white p-10" value="Data Analitics & A" />
+                                    <input type="hidden" class="site-text text-white p-10" value="Cloud & Infrastructure services(CIS)" /> -->
+                                </div>   
                             </div>
-                            <h3 class="ribbon-text">Digital Transformation</h3>
-                            <p class="site-text m-t-16">Digital transformation is the conversion of all corporate processes from manual and analogue to digital.</p>
-                            <a href="#" class="viewall m-t-60  mb-m-t-30">VIEW ALL SERVICES</a>
                         </div>
-                        <div class="col-md-5">
-                            <div class="slider slider-nav  mb-m-t-30">
-                                <div class="service-carousel-image">
-                                    <img src="./assets/images/serviceimg.svg" />  
-                                    <button>Know More</button>
+                        <div class="col-md-8 mx-auto m-t-60 mb-m-t-30">
+                            <div class="slider slider-for">
+                                <div class="row">
+                                    <div class="col-md-6 p-r-0">
+                                        <div class="p-60 themebg">
+                                            <h3 class="section-heading text-white">Digital Transformation</h3>
+                                            <p class="site-text text-white m-t-40">Digital transformation is the conversion of all corporate processes from manual and analogue to digital. changing tech landscape is necessary to maintain your edge.</p>
+                                            <button class="m-t-40 btn primary">View More</button></div>
+                                        </div>
+                                    <div class="col-md-6 p-l-0 hide-md-down">
+                                        <div class="service-carousel-image">
+                                            <img src="./assets/images/serviceimg.svg" />  
+                                        </div>
+                                    </div>
+
                                 </div>
-                                <img src="./assets/images/customer.svg" />                           
+                                <div class="row">
+                                    <div class="col-md-6 p-r-0">
+                                        <div class="p-60 themebg">
+                                            <h3 class="section-heading text-white">Digital Transformation</h3>
+                                            <p class="site-text text-white m-t-40">Digital transformation is the conversion of all corporate processes from manual and analogue to digital. changing tech landscape is necessary to maintain your edge.</p>
+                                            <button class="m-t-40 btn primary">View More</button></div>
+                                        </div>
+                                    <div class="col-md-6 p-l-0">
+                                        <div class="service-carousel-image hide-md-down">
+                                            <img src="./assets/images/serviceimg.svg" />  
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 p-r-0">
+                                        <div class="p-60 themebg">
+                                            <h3 class="section-heading text-white">Digital Transformation</h3>
+                                            <p class="site-text text-white m-t-40">Digital transformation is the conversion of all corporate processes from manual and analogue to digital. changing tech landscape is necessary to maintain your edge.</p>
+                                            <button class="m-t-40 btn primary">View More</button></div>
+                                        </div>
+                                    <div class="col-md-6 p-l-0 hide-md-down">
+                                        <div class="service-carousel-image">
+                                            <img src="./assets/images/serviceimg.svg" />  
+                                        </div>
+                                    </div>
+
+                                </div>                   
                             </div>
                         </div>
-                        <div class="col-md-1">
-                            <div class="next-service">
-                                <h3>Next Service</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="subscription">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 mb-m-t-30 mb-p-r-0 p-l-0">
+                            <div class="subs-image">
+                                <img src="./assets/images/subscription.svg" class="img-fluid"/>
+                                <div class="image-overlay">
+                                    <h3 class="section-heading text-center text-white">Get in touch with us 
+                                        now to fulfill all of 
+                                        your IT Needs.</h3>
+                                    <p class="m-t-60  mb-m-t-30"><i class="fa fa-square-phone"></i> +1 (469) 524 3401</p>
+                                    <button class="primary btn m-t-60  mb-m-t-30">Let's Go </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-m-t-30">
+                            <div class="sub_text">
+                                <h3 class="section-heading">Sign up for our
+                                    newsletter to receive 
+                                    the most recent updates.</h3>
+                                <input type="text" class="email-input m-t-60 mb-m-t-30" value="" placeholder="Enter your email *"/>
+                                <button class="btn primary m-t-60 mb-m-t-30">Subscribe</button>
                             </div>
                         </div>
                     </div>
@@ -166,66 +245,51 @@
                     prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-arrow-left' aria-hidden='true'></i></button>",
                     nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-arrow-right' aria-hidden='true'></i></button>"
                 })
-                $('.slider-single').slick({
+                $('.slider-for').slick({
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    arrows: false,
-                    adaptiveHeight: true,
-                    infinite: false,
-                    useTransform: true,
-                    speed: 400,
-                    prevArrow: false,
-                    nextArrow: false,
-                    dots: true,
-                    cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+                    arrows: true,
+                    dots: false,
+                    asNavFor: '.slider-nav',
+                    prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-arrow-left' aria-hidden='true'></i></button>",
+                    nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-arrow-right' aria-hidden='true'></i></button>",
+                    responsive: [{
+                        breakpoint: 767,
+                        settings:{
+                            arrows: false
+                        }
+                    }
+                    ]
                 });
-                $('.slider-nav')
-                    .on('init', function(event, slick) {
-                        $('.slider-nav .slick-slide.slick-current').addClass('is-active');
-                    })
-                    .slick({
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        dots: false,
-                        focusOnSelect: false,
-                        infinite: false,
-                        prevArrow: false,
-                        nextArrow: false,
-                        centerMode: true,
-                        centerPadding: 60
-                        // responsive: [{
-                        //     breakpoint: 1024,
-                        //     settings: {
-                        //         slidesToShow: 5,
-                        //         slidesToScroll: 5,
-                        //     }
-                        // }, {
-                        //     breakpoint: 640,
-                        //     settings: {
-                        //         slidesToShow: 4,
-                        //         slidesToScroll: 4,
-                        //     }
-                        // }, {
-                        //     breakpoint: 420,
-                        //     settings: {
-                        //         slidesToShow: 3,
-                        //         slidesToScroll: 3,
-                        // }
-                        // }]
-                    });
-                    $('.slider-single').on('afterChange', function(event, slick, currentSlide) {
-                        $('.slider-nav').slick('slickGoTo', currentSlide);
-                        var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
-                        $('.slider-nav .slick-slide.is-active').removeClass('is-active');
-                        $(currrentNavSlideElem).addClass('is-active');
-                    });
-
-                    $('.slider-nav').on('click', '.slick-slide', function(event) {
-                        event.preventDefault();
-                        var goToSingleSlide = $(this).data('slick-index');
-
-                        $('.slider-single').slick('slickGoTo', goToSingleSlide);
-                    });
+                $('.slider-nav').slick({
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    arrows:false,
+                    asNavFor: '.slider-for',
+                    dots: false,
+                    focusOnSelect: true,
+                    centerMode: true,
+                    centerPadding: 0,
+                    responsive: [{
+                            breakpoint: 1024,
+                            settings: {
+                                slidesToShow: 4,
+                                slidesToScroll: 1,
+                            }
+                        }, {
+                            breakpoint: 640,
+                            settings: {
+                                slidesToShow: 2,
+                                slidesToScroll: 2,
+                            }
+                        }, {
+                            breakpoint: 420,
+                            settings: {
+                                slidesToShow: 1,
+                                slidesToScroll: 1,
+                        }
+                    }]
+                });     
             })
         </script>
     </body>

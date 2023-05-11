@@ -6,9 +6,22 @@
     word-break: break-word;
     text-transform: uppercase;
 }
+.relative{
+    position: relative;
+}
+.relative > img{
+    position: relative;
+    z-index: 1;
+    width: 410px;
+    margin-top: 128px;
+    margin-left: 154px;
+}
 .slick-slide img.gifbanner{
     position: absolute;
-    display: none;
+    top: -187px;
+    z-index: 0;
+    right: 0;
+    width: 100%;
 }
 .customer-multiduties .site-text{
     width: 70%;
@@ -27,10 +40,11 @@ div[class*=circle]{
     color: var(--themeColor);
 }
 .carousel-banner .slick-dots{
-    margin: 0;
-    top: 61%;
-    left: 28%;
+    
+    bottom: -50px;
+    width: 100%;
     position: absolute;
+    text-align: center;
 }
 .carousel-banner .slick-dots img {
     width: 75px;
