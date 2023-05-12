@@ -6,7 +6,6 @@
     object-fit: cover;
 }
 .slick-initialized .slick-slide{
-    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -50,6 +49,9 @@
     text-align: center;
     padding: 12px;
 }
+.slick-slide img{
+    width: 100%;
+}
 
 @media(max-width: 767px){
     .page-banner-image,
@@ -58,5 +60,14 @@
     }
     .name-slider{
         margin: 0;
+    }
+    .slick-next{
+        background-color: transparent;
+        right: 2px;
+    }
+    .slick-prev{
+        color: #fff;
+        z-index: 1;
+        left: 0;
     }
 }

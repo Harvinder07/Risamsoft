@@ -18,6 +18,12 @@ textarea{
     width: 90%;
 }
 @media(max-width: 767px){
+    .section-heading{
+        font-size: 18px;
+    }
+    .image img{
+        height: auto;
+    }
     div > .img-fluid.mob-img{
         height: 620px;
     }

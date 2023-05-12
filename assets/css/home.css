@@ -9,20 +9,21 @@
 .relative{
     position: relative;
 }
-.relative > img{
+.carousel-banner .relative > img{
     position: relative;
     z-index: 1;
     width: 410px;
-    margin-top: 128px;
-    margin-left: 154px;
+    margin: 30px auto 0;
+    margin-right: 13px;
 }
-.slick-slide img.gifbanner{
-    position: absolute;
-    top: -187px;
-    z-index: 0;
-    right: 0;
-    width: 100%;
+.gifbanner{
+    background: url(../images/banner.gif) center / contain no-repeat;
+    background-size: 100%;
+    position: relative;
+    z-index: 3;
+    text-align: center;
 }
+
 .customer-multiduties .site-text{
     width: 70%;
 }
@@ -54,10 +55,10 @@ div[class*=circle]{
     cursor: pointer;
 }
 .achievement{
-    top: 6px;
-    left: 6px;
-    width: 88px;
-    height: 88px;
+    top: 5px;
+    left: 5px;
+    width: 90px;
+    height: 90px;
     display: flex;
     font-size: 30px;
     color: #26B8EB;
@@ -118,6 +119,7 @@ div[class*=circle]{
     margin-top: 40px;
 }
 .services img{
+    width: 90%;
     height: 600px;
     object-fit: cover;
 }
@@ -155,7 +157,7 @@ div[class*=circle]{
 .service-carousel-image{
  position: relative;   
 }
-.service-carousel-image button{
+.service-carousel-image a{
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -163,6 +165,24 @@ div[class*=circle]{
     padding: 10px 20px;
     color: var(--themeColor);
     border: 1px solid var(--themeColor);
+}
+.services .slick-dots{
+    padding: 0 24px;
+}
+.services .slick-arrow {
+    position: absolute;
+    top: 44px;
+    background: transparent;
+    border: none;
+    color: #666;
+}
+.services .slick-next{
+    left: 240px;
+    font-size: 12px;
+}
+.services .slick-prev{
+    left: 0;
+    font-size: 12px;
 }
 @media(max-width: 1380px){
     .service-carousel-image button{
@@ -216,6 +236,7 @@ div[class*=circle]{
         font-size: var( --mob-display);
     }
     .services img{
+        width: 100%;
         height: auto;
     }
     .ribbon-text{
@@ -223,9 +244,6 @@ div[class*=circle]{
         font-size: var(--mob-normalText);
     }
     .viewall:before {
-        display: none;
-    }
-    .next-service{
         display: none;
     }
     .service-carousel-image button{
@@ -236,5 +254,13 @@ div[class*=circle]{
 @media(max-width: 525px){
     .about{
         padding: 40px;
+    }
+    .gifbanner{
+        width: 410px;
+    }
+    .carousel-banner .relative > img{
+        width: 220px;
+        margin: 15px auto 0;
+        margin-right: 8px;
     }
 }

@@ -18,6 +18,10 @@
     --mob-normalText: 16px;
     --mob-section-heading: 24px;
 }
+.navbar-expand-lg .navbar-nav{
+    position: relative;
+    z-index: 2;
+}
 .navbar-expand-lg .navbar-nav .nav-link.active, .dropdown-btn.active{
     position: relative;
     color: var(--themeColor);
@@ -36,6 +40,9 @@
 a{
     text-decoration: none;
     display: block;
+}
+a.btn:hover{
+    color: currentColor;
 }
 .text-theme{
     color: var(--themeColor);
@@ -91,9 +98,9 @@ a{
     color: var(--white);
 }
 .secondary{
-    border: 1px solid var(--grey);
+    border: 1px solid var(--secondaryColor);
     background-color: transparent;
-    color: var(--grey);
+    color: var(--secondaryColor);
 }
 .heading{
     font-size: var(--display);
@@ -106,6 +113,7 @@ a{
     font-weight: var(--extra-bold);
     line-height: 1.1;
 }
+
 .site-text{
     font-size: var(--normalText);
     color: var(--grey);
@@ -128,7 +136,10 @@ a{
 .viewall:hover{
     color: var(--secondaryColor);
 }
-
+.dottedgif{
+    background: url(../images/doted.gif) center right / contain no-repeat;
+    background-size: 100%;
+}
 .text-white{
     color: var(--white);
 }
@@ -137,6 +148,12 @@ a{
 }
 .relative{
     position: relative;
+}
+.gradient-border{
+    border-width: 5px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #fff 35%, #26B8EB);
+    border-image-slice: 1;
 }
 /**** flex ****/
 .flex{
@@ -155,6 +172,9 @@ a{
 /**** PROCESS ****/
 .process{
     position: relative;
+}
+.progress-section{
+    background: url(../images/doted.gif) right / cover no-repeat;
 }
 .process-overlay{
     top: 43%;
@@ -245,8 +265,8 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #535EE0;
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--black);
 }
 .social-icons li i{
     font-size: 14px;
@@ -447,11 +467,20 @@ div > .img-fluid{
     .mb-fdc{
         flex-direction: column;
     }
+    .mb-m-t-0{
+        margin-top: 0;
+    }
+    .mb-p-r-16{
+        padding-right: 16px;
+    }
     .mb-m-t-40{
         margin-top: 40px;
     }
     .mb-m-t-30{
         margin-top: 30px;
+    }
+    .mb-p-0{
+        padding: 0;
     }
     .mb-p-r-0{
         padding-right: 0;
