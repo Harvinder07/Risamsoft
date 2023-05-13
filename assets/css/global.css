@@ -322,8 +322,11 @@ a.btn:hover{
 .p-r-0{
     padding-right: 0;
 }
-.p-l-0{
+/*.p-l-0{
     padding-left: 0;
+}*/
+.p-x-20{
+    padding: 20px;
 }
 .p-60{
     padding: 60px;
@@ -439,6 +442,12 @@ div > .img-fluid{
     }
 }
 @media(max-width:991px){
+    .tab-p-l-16{
+        padding-left: 16px;
+    }
+    .tab-p-r-12{
+        padding-right: 12px;
+    }
     .footer-overlay{
         padding: 30px;
     }
@@ -482,9 +491,9 @@ div > .img-fluid{
     .mb-p-0{
         padding: 0;
     }
-    .mb-p-r-0{
+    ./*mb-p-r-0{
         padding-right: 0;
-    }
+    }*/
     .mb-p-b-0{
         padding-bottom: 0;
     }
