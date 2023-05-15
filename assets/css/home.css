@@ -30,7 +30,7 @@
 .progress-bars{
     display: flex;
     justify-content: space-between;
-    width: 70%;
+    width: 45%;
 }
 div[class*=circle]{
     position: relative;
