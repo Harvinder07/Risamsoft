@@ -1,4 +1,4 @@
-.image-overlay .section-heading{
+.image-overlay a.section-heading{
     font-weight: var(--normal);
     color: var(--white);
 }

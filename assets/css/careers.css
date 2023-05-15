@@ -4,6 +4,22 @@ textarea{
     padding: 16px;
     width: 50%;
 }
+.job.section-heading{
+    width: 100%;
+}
+.job-type{
+    position: relative;
+    width: max-content;
+}
+.job-type:before{
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    width: 70%;
+    height: 3px;
+    background: var(--secondaryColor);
+    left: 0;
+}
 .icon{
     width: 60px;
 }
