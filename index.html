@@ -68,6 +68,7 @@
             <div class="col-md-6 y-p-60 mb-y-p-30 relative gifbanner">
               <img src="./assets/images/banner-image.svg " />
             </div>
+<<<<<<< HEAD
           </div>
         </div>
       </div>
@@ -92,6 +93,86 @@
                 <span class="achievement">90</span>
                 <p>Positive Reviews 123</p>
               </div>
+=======
+        </footer>
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+        <script src="./assets/js/slick.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                // $('.slick-slider').slick({
+                //     // autoplay: true,
+                //     // autoplaySpeed: 2000,
+                //     prevArrow: false,
+                //     nextArrow: false,
+                //     dots: true,
+                //     cssEase: 'linear',
+                //     customPaging: function(slider, i) {
+                //         var image = $(slider.$slides[i]).find('img').attr('src');
+                //         return '<img src="' + image + '"/>';
+                //     }
+                // });
+                $('.process-slider').slick({
+                    dots: true,
+                    prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-arrow-left' aria-hidden='true'></i></button>",
+                    nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-arrow-right' aria-hidden='true'></i></button>"
+                })
+                $('.slider-single').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    adaptiveHeight: true,
+                    infinite: true,
+                    useTransform: true,
+                    autoplaySpeed: 2000,
+                    autoplay: true,
+                    prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-chevron-left' aria-hidden='true'></i></button>",
+                    nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-chevron-right' aria-hidden='true'></i></button>",
+                    dots: true,
+                    cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
+                });
+                $('.slider-nav')
+                    .on('init', function(event, slick) {
+                        $('.slider-nav .slick-slide.slick-current').addClass('is-active');
+                    })
+                    .slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: false,
+                        focusOnSelect: false,
+                        infinite: false,
+                        prevArrow: false,
+                        nextArrow: false,
+                        centerMode: true,
+                        centerPadding: 60
+                        // responsive: [{
+                        //     breakpoint: 1024,
+                        //     settings: {
+                        //         slidesToShow: 5,
+                        //         slidesToScroll: 5,
+                        //     }
+                        // }, {
+                        //     breakpoint: 640,
+                        //     settings: {
+                        //         slidesToShow: 4,
+                        //         slidesToScroll: 4,
+                        //     }
+                        // }, {
+                        //     breakpoint: 420,
+                        //     settings: {
+                        //         slidesToShow: 3,
+                        //         slidesToScroll: 3,
+                        // }
+                        // }]
+                    });
+                    $('.slider-single').on('afterChange', function(event, slick, currentSlide) {
+                        $('.slider-nav').slick('slickGoTo', currentSlide);
+                        var currrentNavSlideElem = '.slider-nav .slick-slide[data-slick-index="' + currentSlide + '"]';
+                        $('.slider-nav .slick-slide.is-active').removeClass('is-active');
+                        $(currrentNavSlideElem).addClass('is-active');
+                    });
+>>>>>>> 123a3a3397c2e92d023dae77c16c448473edebd6
 
               <!-- <div class="circle-two" data-value="0.95" data-thickness="06">
                 <span class="achievement">94</span>

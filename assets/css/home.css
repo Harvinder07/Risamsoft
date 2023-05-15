@@ -106,7 +106,7 @@ div[class*=circle]{
     content: none;
 }
 .ribbon-text{
-    width: calc(100% + 70px);
+    width: 100%;
     background: var(--secondaryColor);
     position: relative;
     z-index: 1;
@@ -159,6 +159,7 @@ div[class*=circle]{
 }
 .service-carousel-image a{
     position: absolute;
+    z-index: 999;
     bottom: 10px;
     left: 10px;
     background: #fff;

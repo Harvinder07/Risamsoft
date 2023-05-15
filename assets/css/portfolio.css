@@ -1,12 +1,12 @@
 .section-heading{
     font-weight: var(--semi-bold);
     text-transform: uppercase;
-    font-size: 32px;
+    font-size: 28px;
     margin: 0 auto;
     width: 90%;
 }
 .portfolio{
-    background: url(../images/doted.gif) center / contain repeat;
+    background: url(../images/gif.png) center / contain repeat;
 }
 .portfolio-img{
     position: relative;
