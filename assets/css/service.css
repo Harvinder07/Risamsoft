@@ -14,7 +14,9 @@
     align-items: center;
 }
 .name-slider{
-    padding: 16px;
+    padding: 16px 50px;
+        margin: 0 -16px;
+    width: calc(100% + 32px);
 }
 .slick-next {
     background: var(--themeColor);
@@ -59,6 +61,21 @@
 }
 .grid .themebg{
     padding: 35px 60px;
+}
+.slider-nav .slick-arrow{
+    top: 0;
+}
+.slider-nav .slick-arrow.slick-prev{
+    color: #fff;
+    background: transparent;
+    left: -45px;
+    top: 3px;
+}
+.slider-nav .slick-arrow.slick-next{
+    color: #fff;
+    background: transparent;
+    right: -50px;
+    top: 3px;
 }
 @media(max-width: 991px){
     .slick-next{

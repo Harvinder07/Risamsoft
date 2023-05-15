@@ -29,8 +29,7 @@
 }
 .progress-bars{
     display: flex;
-    justify-content: space-between;
-    width: 45%;
+    column-gap: 48px;
 }
 div[class*=circle]{
     position: relative;
@@ -112,7 +111,7 @@ div[class*=circle]{
     z-index: 1;
     color: #fff;
     padding: 14px 30px;
-    font-size: 46px;
+    font-size: 30px;
     font-weight: var(--bold);
     text-transform: uppercase;
     border-radius: 2px;

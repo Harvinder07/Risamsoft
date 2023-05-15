@@ -5,9 +5,9 @@
     margin: 0 auto;
     width: 90%;
 }
-.portfolio{
+/*.portfolio{
     background: url(../images/gif.png) center / contain repeat;
-}
+}*/
 .portfolio-img{
     position: relative;
 }
