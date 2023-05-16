@@ -158,7 +158,7 @@
           <div class="row">
             <div class="col-md-3">
               <div class="about">
-                <img alt= "" src="./assets/images/footer-logo.svg" />
+                <img alt= "footer-logo" class="logo" src="./assets/images/footer-logo.svg" />
                 <p>
                   Our goal is to effectively supply our clients with cutting
                   edge technology solutions.

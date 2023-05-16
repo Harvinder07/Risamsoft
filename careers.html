@@ -368,7 +368,7 @@
           <div class="row">
             <div class="col-md-3 align-self-center">
               <div class="about">
-                <img src="./assets/images/footer-logo.svg" />
+                <img alt="footer-logo" class="logo" src="./assets/images/footer-logo.svg" />
               </div>
             </div>
             <div class="col-md-3 mb-m-t-40">
@@ -383,7 +383,7 @@
                     <a class="text-white" href="./services.html">Services</a>
                   </li>
                   <li>
-                    <a class="text-white" href="./careers.html">Carrers</a>
+                    <a class="text-white" href="./careers.html">Careers</a>
                   </li>
                   <li>
                     <a class="text-white" href="./contact.html">Contact Us</a>
@@ -426,6 +426,7 @@
             </div>
           </div>
         </div>
+        <button id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button>
       </div>
       <div class="footer-overlay m-t-40 mb-m-t-20 gap-12 flex aic jcsb mb-fdc">
         <p class="m-0 text-white text-center">
@@ -440,6 +441,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
     <script src="./assets/js/slick.min.js"></script>
+    <script>
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        var rootElement = document.documentElement;
+    
+        function scrollToTop() {
+          // Scroll to top logic
+          rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        }
+        scrollToTopBtn.addEventListener("click", scrollToTop);
+    </script>
     <script>
       $(document).ready(function () {
         $(".process-slider").slick({

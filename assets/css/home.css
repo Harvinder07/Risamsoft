@@ -200,6 +200,9 @@ div[class*=circle]{
 div.subs-image > .img-fluid{
     height: 620px;
 }
+.image-overlay .section-heading{
+    width: 65%;
+}
 @media(max-width: 1380px){
     .service-carousel-image button{
         right: 10px;
@@ -244,6 +247,9 @@ div.subs-image > .img-fluid{
     }
 }
 @media(max-width: 767px){
+    .image-overlay .section-heading{
+        width: 100%;
+    }
     div.subs-image > .img-fluid{
         height: auto;
     }

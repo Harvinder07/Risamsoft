@@ -35,7 +35,7 @@
 }
 .content{
     background: rgba(13, 116, 176, 0.6);
-    border-radius: 12px;
+    border-radius: 50px;
     position: relative;
     padding: 40px;
     right: -90px;
@@ -45,9 +45,7 @@
 .col-md-6.duties-img{
     padding-left: 0;
 }
-.duties-img img{
-    height: 767px;
-}
+
 .image img{
     width: 100%;
     height: 540px;
