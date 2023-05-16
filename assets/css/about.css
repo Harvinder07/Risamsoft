@@ -38,8 +38,9 @@
     border-radius: 12px;
     position: relative;
     padding: 40px;
-    right: -80px;
-    width: 420px;
+    right: -90px;
+    width: 550px;
+    font-weight: 600;
 }
 .duties-img img{
     height: 767px;
