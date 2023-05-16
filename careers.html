@@ -50,7 +50,7 @@
                             <div class="banner y-p-60 mb-y-p-30 text-center">
                                 <h3 class="heading text-white">Careers</h3>
                                 <div class="image m-t-40 mb-m-t-20">
-                                    <img src="./assets/images/carrers.svg" class="page-banner-image"/>
+                                    <img src="./assets/images/contact/careers.webp" class="page-banner-image"/>
                                 </div>
                             </div>
                         </div>
@@ -152,20 +152,20 @@
                             </div>
                         </div>
                         <div class="col-md-6 y-p-60 mb-y-p-30 mx-auto mb-m-t-30 gradient-border">
-                            <form action="career.php" method="post" class="career-form"> 
+                            <form action="career.php" method="post" class="career-form" enctype="multipart/form-data"> 
                             <div class="sub_text">
                                 <h3 class="section-heading">Join OUr Team</h3>
                                 
                                 <input type="text" class="email-input m-t-60 mb-m-t-30" name="name" value="" placeholder="Full Name *"/>
                                 <input type="email" class="email-input m-t-16" value="" name="email" placeholder="Enter your email *"/>
-                                <input type="number" class="email-input m-t-16" value="" name="number" placeholder="Mobile Number *"/>
+                                <input type="number" class="email-input m-t-16" value="" name="phone" placeholder="Mobile Number *"/>
                                 <input type="text" class="email-input m-t-16" value="" name="position" placeholder="Your Position *"/>
                                 <textarea placeholder="Enter your Message" class=" m-t-16" name="message"></textarea>
                                 <div class="file-upload">
                                     <div class="file-select">
                                       <div class="file-select-button" id="fileName">Choose File</div>
                                       <div class="file-select-name" id="noFile">No file chosen...</div> 
-                                      <input type="file" name="chooseFile" id="chooseFile">
+                                      <input type="file" name="attachment" id="chooseFile">
                                     </div>
                                   </div>
                                 <button class="btn primary m-t-40 mb-m-t-30" type="submit" name="submit">Send Application</button>
