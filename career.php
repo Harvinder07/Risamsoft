@@ -1,30 +1,57 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$position = $_POST['position'];
-$message = $_POST['message'];
+// Include PHPMailer autoloader
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 
-$email_from = 'info.riasmsoft@gmail.com';
-//$Bcc = ' sandeep2siripurapu@gmail.com';
-$email_subject = "Risamsoft Career Form";
-$email_body = "Name: $name.\n".
-"User Email: $email.\n".
-"Phone Number: $phone.\n".
-"Position: $position.\n".
-"Message: $message.\n";
+if (isset($_POST['submit'])) {
+    // Get form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $position = $_POST['position'];
+    $message = $_POST['message'];
 
-$to = "info.riasmsoft@gmail.com";
+    // File attachment
+    $file_name = $_FILES['attachment']['name'];
+    $file_tmp = $_FILES['attachment']['tmp_name'];
+    $file_size = $_FILES['attachment']['size'];
+    $file_type = $_FILES['attachment']['type'];
+    $file_error = $_FILES['attachment']['error'];
 
-$headers = "From: $email_from \r\n";
+    // Set up PHPMailer
+    $mail = new PHPMailer(true);a
 
-$headers .= "Bcc: $Bcc \r\n";
+    try {
+        // SMTP configuration
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'shussaini@ikonostechnologies.com'; // Replace with your Gmail username
+        $mail->Password = 'zmxfznvshqfaztci'; // Replace with your Gmail password
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 587;
 
-$headers .= "Reply To: $email \r\n";
+        // Email content
+        $mail->setFrom($email, $name);
+        $mail->addAddress('gunjankhandal05@gmail.com'); // Replace with your email address
+        $mail->Subject = 'New Contact Form Submission';
+        $mail->Body = "Name: $name\nEmail: $email\nPhone: $phone\nPosition: $position\nMessage: $message";
 
-mail($to,$email_subject,$email_body,$headers);
+        // Attach file
+        if ($file_size > 0) {
+            $mail->addAttachment($file_tmp, $file_name);
+        }
 
-header("Location:success.html");
-
+        // Send email
+        $mail->send();
+        //echo "Email sent successfully!";
+        header("Location: success.html");
+    } catch (Exception $e) {
+        echo "Failed to send email. Error: " . $mail->ErrorInfo;
+    }
+}
 ?>

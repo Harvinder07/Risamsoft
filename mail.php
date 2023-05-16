@@ -15,7 +15,7 @@ $email_body = "Name: $name.\n".
 "Position: $position.\n".
 "Message: $message.\n";
 
-$to = "info.riasmsoft@gmail.com";
+$to = "gunjankhandal05@gmail.com";
 
 $headers = "From: $email_from \r\n";
 

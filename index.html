@@ -200,26 +200,6 @@
       <div class="container-fluid p-0">
         <div class="process-slider">
           <div class="relative">
-            <img src="./assets/images/Develop.png" class="img-fluid" />
-            <div class="process-overlay">
-              <h3 class="heading text-white">Our flawless process</h3>
-              <p class="site-text text-white m-t-40 mb-m-t-20">Through a combination of technology, domain, and process
-                experience, RisamSoft is a provider of technology services that consistently provides advanced
-                analytics, application services, cloud solutions, outsourcing, and IT staffing.</p>
-            </div>
-            <h3 class="text-center m-t-40 mb-m-t-20 heading">DEVELOP</h3>
-          </div>
-          <div class="relative">
-            <img src="./assets/images/Launch.png" class="img-fluid" />
-            <div class="process-overlay">
-              <h3 class="heading text-white">Our flawless process</h3>
-              <p class="site-text text-white m-t-40 mb-m-t-20">Through a combination of technology, domain, and process
-                experience, RisamSoft is a provider of technology services that consistently provides advanced
-                analytics, application services, cloud solutions, outsourcing, and IT staffing.</p>
-            </div>
-            <h3 class="text-center m-t-40 mb-m-t-20 heading">LAUNCH</h3>
-          </div>
-          <div class="relative">
             <img src="./assets/images/Research.png" class="img-fluid" />
             <div class="process-overlay">
               <h3 class="heading text-white">Our flawless process</h3>
@@ -228,6 +208,16 @@
                 analytics, application services, cloud solutions, outsourcing, and IT staffing.</p>
             </div>
             <h3 class="text-center m-t-40 mb-m-t-20 heading">RESEARCH</h3>
+          </div>
+          <div class="relative">
+            <img src="./assets/images/Develop.png" class="img-fluid" />
+            <div class="process-overlay">
+              <h3 class="heading text-white">Our flawless process</h3>
+              <p class="site-text text-white m-t-40 mb-m-t-20">Through a combination of technology, domain, and process
+                experience, RisamSoft is a provider of technology services that consistently provides advanced
+                analytics, application services, cloud solutions, outsourcing, and IT staffing.</p>
+            </div>
+            <h3 class="text-center m-t-40 mb-m-t-20 heading">DEVELOP</h3>
           </div>
           <div class="relative">
             <img src="./assets/images/Testing.png" class="img-fluid" />
@@ -239,6 +229,18 @@
             </div>
             <h3 class="text-center m-t-40 mb-m-t-20 heading">TESTING</h3>
           </div>
+          <div class="relative">
+            <img src="./assets/images/Launch.png" class="img-fluid" />
+            <div class="process-overlay">
+              <h3 class="heading text-white">Our flawless process</h3>
+              <p class="site-text text-white m-t-40 mb-m-t-20">Through a combination of technology, domain, and process
+                experience, RisamSoft is a provider of technology services that consistently provides advanced
+                analytics, application services, cloud solutions, outsourcing, and IT staffing.</p>
+            </div>
+            <h3 class="text-center m-t-40 mb-m-t-20 heading">LAUNCH</h3>
+          </div>
+         
+         
         </div>
       </div>
     </section>
@@ -299,7 +301,7 @@
               <ul>
                 <li><a class="text-white" href="#"><i class="fa fa-location"></i>5005 W Royal ln,
                     suite 148 Irving tX 75063.</a></li>
-                <li><a class="text-white" href="#"><i class="fa fa-phone"></i>+1(469)524-3401</a></li>
+                <li><a class="text-white" href="#"><i class="fa fa-phone"></i>+91 97007 79977</a></li>
                 <li><a class="text-white" href="#"><i class="fa fa-envelope"></i>info@risamsoft.com</a></li>
 
               </ul>
@@ -412,22 +414,29 @@
         $('.slider-single').slick('slickGoTo', goToSingleSlide);
       });
     })
-    temp = parseInt($(".circle-one span").text())
+    function animation(){
+      temp = parseInt($(".circle-one span").text())
     $('.circle-one').circleProgress({
       fill: { gradient: ['#26B8EB', '#26B8EB'] },
-      startAngle: -Math.PI / 2,
+    //  startAngle: -Math.PI / 2,
       size: 100
     }).on('circle-animation-progress', function (event, progress) {
-      $(this).find('span').html(parseInt(progress * temp)).append('%');
+      $(this).find('span').html(parseInt(progress * 90)).append('%');
     });
     temp_two = parseInt($(".circle-two span").text())
     $('.circle-two').circleProgress({
       fill: { gradient: ['#26B8EB', '#26B8EB'] },
-      startAngle: -Math.PI / 2,
+     // startAngle: -Math.PI / 2,
       size: 100
     }).on('circle-animation-progress', function (event, progress) {
-      $(this).find('span').html(parseInt(progress * temp_two)).append('%');
+      $(this).find('span').html(parseInt(progress * 95)).append('%');
     });
+    }
+    animation();
+  window.addEventListener('scroll', function() {
+  animation();
+  
+});
 
   </script>
 </body>

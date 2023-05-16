@@ -110,22 +110,25 @@
                       <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
                       </div>
+                      <form action="career.php" method="post" class="career-form">
                       <div class="modal-body">
                         <div class="sub_text">
                             <h3 class="section-heading">Join OUr Team</h3>
-                            <input type="text" class="email-input m-t-16" value="" placeholder="Full Name *"/>
-                            <input type="email" class="email-input m-t-16" value="" placeholder="Enter your email *"/>
-                            <input type="number" class="email-input m-t-16" value="" placeholder="Mobile Number *"/>
-                            <input type="text" class="email-input m-t-16" value="" placeholder="Your Position *"/>
-                            <textarea placeholder="Enter your Message" class=" m-t-16"></textarea>
+                            
+                            <input type="text" class="email-input m-t-16" value="" name="name" placeholder="Full Name *"/>
+                            <input type="email" class="email-input m-t-16" value="" name="email" placeholder="Enter your email *"/>
+                            <input type="number" class="email-input m-t-16" value="" name="number" placeholder="Mobile Number *"/>
+                            <input type="text" class="email-input m-t-16" value="" name="position" placeholder="Your Position *"/>
+                            <textarea placeholder="Enter your Message" name="message" class=" m-t-16"></textarea>
                             <div class="email-input m-t-16 relative flex aic">
-                                <label class="upload">Choose File<input type="file"></label><input type="text" class="file" value="" />
+                                <label class="upload">Choose File<input type="file" name="chooseFile"></label><input type="text" class="file" value="" />
                             </div>
                         </div>
                       </div>
                       <div class="modal-footer">
-                       <button class="btn primary m-t-40 mb-m-t-30">Send Application</button>
+                       <button class="btn primary m-t-40 mb-m-t-30" type="submit" name="submit" >Send Application</button>
                       </div>
+                    </form> 
                     </div>
                   </div>
                 </div>  
@@ -156,15 +159,19 @@
                             </div>
                         </div> -->
                         <div class="col-md-6 y-p-60 mb-y-p-30 mx-auto mb-m-t-30 gradient-border">
+                            <form action="career.php" method="post" class="career-form"> 
                             <div class="sub_text">
                                 <h3 class="section-heading">Join OUr Team</h3>
-                                <input type="text" class="email-input m-t-60 mb-m-t-30" value="" placeholder="Full Name *"/>
-                                <input type="email" class="email-input m-t-16" value="" placeholder="Enter your email *"/>
-                                <input type="number" class="email-input m-t-16" value="" placeholder="Mobile Number *"/>
-                                <input type="text" class="email-input m-t-16" value="" placeholder="Your Position *"/>
-                                <textarea placeholder="Enter your Message" class=" m-t-16"></textarea>
-                                <button class="btn primary m-t-40 mb-m-t-30">Send Application</button>
+                                
+                                <input type="text" class="email-input m-t-60 mb-m-t-30" name="name" value="" placeholder="Full Name *"/>
+                                <input type="email" class="email-input m-t-16" value="" name="email" placeholder="Enter your email *"/>
+                                <input type="number" class="email-input m-t-16" value="" name="number" placeholder="Mobile Number *"/>
+                                <input type="text" class="email-input m-t-16" value="" name="position" placeholder="Your Position *"/>
+                                <textarea placeholder="Enter your Message" class=" m-t-16" name="message"></textarea>
+                                <button class="btn primary m-t-40 mb-m-t-30" type="submit" name="submit">Send Application</button>
+                               
                             </div>
+                        </form>
                         </div>
                     </div>
                 </div>
@@ -198,7 +205,7 @@
                                 <ul>
                                     <li><a class="text-white" href="#"><i class="fa fa-location"></i>5005 W Royal ln, 
                                         suite 148 Irving tX 75063.</a></li>
-                                    <li><a class="text-white" href="#"><i class="fa fa-phone"></i>+1(469)524-3401</a></li>
+                                    <li><a class="text-white" href="#"><i class="fa fa-phone"></i>+91 97007 79977</a></li>
                                     <li><a class="text-white" href="#"><i class="fa fa-envelope"></i>info@risamsoft.com</a></li>
                                 
                                 </ul>
