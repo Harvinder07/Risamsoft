@@ -507,15 +507,15 @@ div > .hauto{
     
 }
 @media(max-width: 767px){
-    
-     .hide-md-down{
-        display: none;
-     }
+
     .mb-fdc{
         flex-direction: column;
     }
     .mb-m-t-0{
         margin-top: 0;
+    }
+    .mb-p-r-0{
+        padding-right: 0;
     }
     .mb-p-r-16{
         padding-right: 16px;
@@ -634,4 +634,7 @@ div > .hauto{
     .page-banner-image{
         height: auto;
     }
+    .hide-sm-down{
+        display: none;
+     }
 }
