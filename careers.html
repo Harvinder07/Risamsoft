@@ -44,7 +44,7 @@
         </header>
         <main>
             <section class="service-banner">
-                <div class="container-fluid">
+                <div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="banner y-p-60 mb-y-p-30 text-center">
@@ -58,7 +58,7 @@
                 </div>
             </section>
             <section class="note text-center text-white">
-                <p class="section-heading text-white">Enhancing human potential and creating the next opportunity for individuals, organizations and communities.</p>
+                <p class="section-heading text-white">Enhancing human potential and creating the next opportunity for <br> individuals, organizations and communities.</p>
             </section>
             <section class="openings mb-m-t-30 m-t-60">
                 <div class="container">
@@ -70,14 +70,7 @@
                             <button class="btn primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now</button>
                         </div>
                     </div>
-                    <div class="card p-24 m-t-40 mb-m-t-20">
-                        <h3 class="job section-heading text-uppercase">Java Developer</h3>
-                        <p class="job-type site-text">(Full time/ Remote Position)</p>
-                        <p class="job-description site-text m-t-40">You will be involved in full development lifecycle of the server components from architecture and design to deployment and integration with other services and partner products.</p>
-                        <div class="button-group m-t-40 aic jcsb">
-                            <button class="btn primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Apply Now</button>
-                        </div>
-                    </div>
+
                     <div class="card p-24 m-t-40 mb-m-t-20">
                         <h3 class="job section-heading text-uppercase">Google Cloud Platform Engineer</h3>
                         <p class="job-type site-text pseudo-after-effect">(Full time/ Remote Position)</p>
@@ -110,18 +103,18 @@
                       <div class="modal-header">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fas fa-times"></i></button>
                       </div>
-                      <form action="career.php" method="post" class="career-form">
+                      <form action="career.php" method="post" class="career-form" enctype="multipart/form-data">
                       <div class="modal-body">
                         <div class="sub_text">
                             <h3 class="section-heading">Join OUr Team</h3>
                             
                             <input type="text" class="email-input m-t-16" value="" name="name" placeholder="Full Name *"/>
                             <input type="email" class="email-input m-t-16" value="" name="email" placeholder="Enter your email *"/>
-                            <input type="number" class="email-input m-t-16" value="" name="number" placeholder="Mobile Number *"/>
+                            <input type="number" class="email-input m-t-16" value="" name="phone" placeholder="Mobile Number *"/>
                             <input type="text" class="email-input m-t-16" value="" name="position" placeholder="Your Position *"/>
                             <textarea placeholder="Enter your Message" name="message" class=" m-t-16"></textarea>
                             <div class="email-input m-t-16 relative flex aic">
-                                <label class="upload">Choose File<input type="file" name="chooseFile"></label><input type="text" class="file" value="" />
+                                <label class="upload">Choose File<input type="file" name="attachment"></label><input type="text" class="file" value="" />
                             </div>
                         </div>
                       </div>
@@ -137,7 +130,7 @@
             <section class="subscription m-t-60 mb-m-t-30">
                 <div class="container-fluid">
                     <div class="row">
-                       <!--  <div class="col-md-6 mb-m-t-30 mb-p-r-0 p-l-0">
+                        <div class="col-md-6 mb-m-t-30 mb-p-r-0 p-l-0">
                             <div class="subs-image">
                                 <img src="./assets/images/subscription.svg" class="mob-img img-fluid"/>
                                 <div class="image-overlay">
@@ -157,7 +150,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                         <div class="col-md-6 y-p-60 mb-y-p-30 mx-auto mb-m-t-30 gradient-border">
                             <form action="career.php" method="post" class="career-form"> 
                             <div class="sub_text">
@@ -168,6 +161,13 @@
                                 <input type="number" class="email-input m-t-16" value="" name="number" placeholder="Mobile Number *"/>
                                 <input type="text" class="email-input m-t-16" value="" name="position" placeholder="Your Position *"/>
                                 <textarea placeholder="Enter your Message" class=" m-t-16" name="message"></textarea>
+                                <div class="file-upload">
+                                    <div class="file-select">
+                                      <div class="file-select-button" id="fileName">Choose File</div>
+                                      <div class="file-select-name" id="noFile">No file chosen...</div> 
+                                      <input type="file" name="chooseFile" id="chooseFile">
+                                    </div>
+                                  </div>
                                 <button class="btn primary m-t-40 mb-m-t-30" type="submit" name="submit">Send Application</button>
                                
                             </div>
@@ -302,5 +302,20 @@
                     });
             })
         </script>
+         <script>
+
+            $('#chooseFile').bind('change', function () {
+              var filename = $("#chooseFile").val();
+              if (/^\s*$/.test(filename)) {
+                $(".file-upload").removeClass('active');
+                $("#noFile").text("No file chosen..."); 
+              }
+              else {
+                $(".file-upload").addClass('active');
+                $("#noFile").text(filename.replace("C:\\fakepath\\", "")); 
+              }
+            });
+            
+                    </script>
     </body>
 </html>
