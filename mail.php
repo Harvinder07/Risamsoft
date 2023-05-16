@@ -1,30 +1,44 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$position = $_POST['position'];
-$message = $_POST['message'];
+// Include PHPMailer autoloader
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 
-$email_from = 'info.riasmsoft@gmail.com';
-//$Bcc = ' sandeep2siripurapu@gmail.com';
-$email_subject = "Risamsoft Contact Form";
-$email_body = "Name: $name.\n".
-"User Email: $email.\n".
-"Phone Number: $phone.\n".
-"Position: $position.\n".
-"Message: $message.\n";
+if(isset($_POST['submit'])){
+    // Get form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $phone = $_POST['phone'];
+    $position = $_POST['position'];
+    $message = $_POST['message'];
 
-$to = "gunjankhandal05@gmail.com";
+    // Set up PHPMailer
+    $mail = new PHPMailer(true);
 
-$headers = "From: $email_from \r\n";
+    try {
+        // SMTP configuration
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'shussaini@ikonostechnologies.com'; // Replace with your Gmail username
+        $mail->Password = 'zmxfznvshqfaztci'; // Replace with your Gmail password
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 587;
 
-$headers .= "Bcc: $Bcc \r\n";
+        // Email content
+        $mail->setFrom($email, $name);
+        $mail->addAddress('saudhussaini@gmail.com'); // Replace with your email address
+        $mail->Subject = 'New Contact Form Submission';
+        $mail->Body = "Name: $name\nEmail: $email\nPhone: $phone\nSubject: $position\nMessage: $message";
 
-$headers .= "Reply To: $email \r\n";
-
-mail($to,$email_subject,$email_body,$headers);
-
-header("Location:success.html");
-
+        // Send email
+        $mail->send();
+        header("Location: success.html");
+    } catch (Exception $e) {
+        echo "Failed to send email. Error: " . $mail->ErrorInfo;
+    }
+}
 ?>

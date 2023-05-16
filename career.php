@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
     $file_error = $_FILES['attachment']['error'];
 
     // Set up PHPMailer
-    $mail = new PHPMailer(true);a
+    $mail = new PHPMailer(true);
 
     try {
         // SMTP configuration
@@ -37,8 +37,8 @@ if (isset($_POST['submit'])) {
 
         // Email content
         $mail->setFrom($email, $name);
-        $mail->addAddress('gunjankhandal05@gmail.com'); // Replace with your email address
-        $mail->Subject = 'New Contact Form Submission';
+        $mail->addAddress('saudhussaini@gmail.com'); // Replace with your email address
+        $mail->Subject = 'New Job Applicaton';
         $mail->Body = "Name: $name\nEmail: $email\nPhone: $phone\nPosition: $position\nMessage: $message";
 
         // Attach file

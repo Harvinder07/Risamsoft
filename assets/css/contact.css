@@ -1,3 +1,6 @@
+body, html{
+    overflow-x: hidden;
+}
 .image-overlay a.section-heading{
     font-weight: var(--normal);
     color: var(--white);
