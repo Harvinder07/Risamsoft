@@ -64,7 +64,7 @@
     display: flex;
     align-items: center;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 .slider-nav  .slick-slide{
     float: none;
@@ -129,9 +129,7 @@ div.subs-image > .img-fluid{
     .slider-nav  .slick-slide{
         margin: 0 6px;
     }
-    .slider-nav .slick-track{
-        justify-content: flex-start;
-    }
+
     .slick-arrow{
         transform: translateY(-50%);
         top: 50%;
