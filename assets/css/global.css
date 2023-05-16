@@ -108,6 +108,13 @@ a.btn:hover{
     font-weight: var(--extra-bold);
     line-height: 1.1;
 }
+
+.header-heading{
+    font-size: var(--display);
+    color: var(--themeColor);
+    font-weight: var(--extra-bold);
+    line-height: 1.1;
+}
 .section-heading{
     font-size: var(--heading);
     font-weight: var(--extra-bold);
@@ -246,6 +253,10 @@ a.btn:hover{
 }
 .footer  img{
     width: 180px;
+}
+
+.footer  .logo{
+    width: 230px;
 }
 .fa-map-marker-alt{
     position: absolute;
