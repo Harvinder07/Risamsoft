@@ -14,7 +14,7 @@
     --bold: 700;
     --semi-bold: 600;
 
-    --mob-display: 30px;
+    --mob-display: 28px;
     --mob-normalText: 16px;
     --mob-section-heading: 24px;
 }
@@ -351,15 +351,19 @@ a.btn:hover{
 .p-0{
     padding: 0;
 }
+.p-x-0{
+    padding-right: 0;
+    padding-left: 0;
+}
 .p-10{
     padding: 10px;
 }
 .p-r-0{
     padding-right: 0;
 }
-/*.p-l-0{
-    padding-left: 0;
-}*/
+.p-l-0{
+    padding-left: 0 !important;
+}
 .p-x-20{
     padding: 20px;
 }
@@ -481,6 +485,22 @@ div > .img-fluid{
 div > .hauto{
     height: auto;
 }
+.whatsapp{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 24px 40px;
+    border: none;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--secondaryColor);
+    margin-top: 60px;
+}
+.whatsapp img{
+    width: 24px;
+}
 @media(max-width: 1380px){
     .slick-slide img, .slick-slide img.img-fluid{
         width: 100%;
@@ -526,7 +546,7 @@ div > .hauto{
         margin-top: 0;
     }
     .mb-p-r-0{
-        padding-right: 0;
+        padding-right: 0 !important;
     }
     .mb-p-r-16{
         padding-right: 16px;
@@ -561,6 +581,14 @@ div > .hauto{
     .footer-overlay{
         padding: 16px;
         border-radius: 8px;
+    }
+    .whatsapp{
+        font-size: 16px;
+        padding: 12px 20px;
+        margin-top: 40px;
+    }
+    .whatsapp img{
+        width: 20px;
     }
     .process-overlay{
         width: 75%;
@@ -607,6 +635,9 @@ div > .hauto{
         font-size: var(--mob-normalText);
         width: 100%;
     }
+    .carousel-banner .primary, .carousel-banner .secondary{
+        width: auto;
+    }
     .section-heading{
         line-height: 1.5;
         font-size: var(--mob-section-heading);
@@ -636,6 +667,9 @@ div > .hauto{
     /* .page-banner-image{
         height: 300px;
     } */
+    .hide-md-down{
+        display: none;
+     }
 }
 
 @media(max-width: 525px){

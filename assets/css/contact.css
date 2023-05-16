@@ -20,30 +20,9 @@ textarea{
 .image-overlay a{
     font-size: 24px;
 }
-.whatsapp{
-    font-size: 24px;
-    font-weight: 600;
-    color: #fff;
-    padding: 24px;
-    border: none;
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: var(--secondaryColor);
-}
-.whatsapp img{
-    width: 24px;
-}
+
 @media(max-width: 767px){
-    .whatsapp{
-        font-size: 16px;
-        padding: 12px 20px;
-        margin-top: 40px;
-    }
-    .whatsapp img{
-        width: 20px;
-    }
+
     .image-overlay .section-heading{
         font-size: 18px;
     }
