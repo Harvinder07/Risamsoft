@@ -209,6 +209,9 @@ div > .img-fluid{
     height:780px;
 }
 @media(max-width: 767px){
+    .note .section-heading{
+        font-size: 14px !important;
+    }
     label.upload{
         font-size: 14px;
     }

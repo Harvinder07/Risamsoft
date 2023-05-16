@@ -15,7 +15,7 @@
 }
 .name-slider{
     padding: 16px 50px;
-        margin: 0 -16px;
+    margin: 0 -16px;
     width: calc(100% + 32px);
 }
 .slick-next {
@@ -114,6 +114,12 @@
     }
 }
 @media(max-width: 767px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+    .image-overlay .section-heading{
+        width: 100%;
+    }
     .slider-nav  .slick-slide{
         margin: 0 6px;
     }

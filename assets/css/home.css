@@ -197,6 +197,9 @@ div[class*=circle]{
     left: 0;
     font-size: 12px;
 }
+div.subs-image > .img-fluid{
+    height: 620px;
+}
 @media(max-width: 1380px){
     .service-carousel-image button{
         right: 10px;
@@ -239,11 +242,11 @@ div[class*=circle]{
     .image-overlay .section-heading, .sub_text .section-heading{
         white-space: normal;
     }
-    .about{
-        padding: 40px 20px;
-    }
 }
 @media(max-width: 767px){
+    div.subs-image > .img-fluid{
+        height: auto;
+    }
     .carousel-banner .slick-dots img{
         width: 60px;
         height: 60px;
@@ -277,7 +280,7 @@ div[class*=circle]{
 }
 @media(max-width: 525px){
     .about{
-        padding: 40px;
+        padding: 20px 0;
     }
     .gifbanner{
         width: 410px;

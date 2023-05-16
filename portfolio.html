@@ -17,7 +17,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"><img src="./assets/images/riamsoft.svg" /></a>
+                <a class="navbar-brand" href="./index.html"><img alt="riamsoft" src="./assets/images/riamsoft.svg" /></a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
                     <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
                 </button>
@@ -51,12 +51,13 @@
             <div class="banner y-p-60 mb-y-p-30 text-center">
                 <h3 class="heading text-white">Portfolio</h3>
                 <div class="image m-t-40 mb-m-t-20 m-lr-20">
-                    <img src="./assets/images/portfolio/portfolio.webp" class="page-banner-image" />
+                    <img alt="portfolio" src="./assets/images/portfolio/portfolio.webp" class="page-banner-image" />
                 </div>
             </div>
         </section>
         <section class="note text-center text-white">
-            <p class="section-heading text-white">Our aim is to skillfully craft cutting-edge technology solutions <br>  and
+            <p class="section-heading text-white">Our aim is to skillfully craft cutting-edge technology solutions <br>
+                and
                 offer them to clients with efficiency.</p>
         </section>
         <section class="portfolio y-p-60 mb-y-p-30">
@@ -64,7 +65,7 @@
                 <div class="row">
                     <div class="col-md-7 p-b-60 mb-p-b-30">
                         <div class="portfolio-img">
-                            <img src="./assets/images/portfolio/project-visualization.webp" />
+                            <img alt="project-visualization" src="./assets/images/portfolio/project-visualization.webp" />
                             <div class="overlay-text">
                                 <h4 class=" text-white">Project visualization</h4>
                                 <p class="site-text text-white hover-text">our increasingly data-driven world, it’s more
@@ -77,7 +78,7 @@
                 <div class="row justify-content-end">
                     <div class="col-md-7">
                         <div class="portfolio-img right">
-                            <img src="./assets/images/portfolio/creation-selection.webp" />
+                            <img alt="creation-selection" src="./assets/images/portfolio/creation-selection.webp" />
                             <div class="overlay-text">
                                 <h4 class="text-white">Creation & Selection</h4>
                                 <p class="site-text text-white hover-text">  We look at ideation techniques, it is
@@ -90,7 +91,7 @@
                 <div class="row y-p-60 mb-y-p-30">
                     <div class="col-md-7">
                         <div class="portfolio-img ">
-                            <img src="./assets/images/portfolio/launch-campaign.webp" />
+                            <img alt="launch-campaign" src="./assets/images/portfolio/launch-campaign.webp" />
                             <div class="overlay-text">
                                 <h4 class="text-white">Launch Campaign</h4>
                                 <p class="site-text text-white hover-text">  We explore potential many opportunities for
@@ -102,7 +103,7 @@
                 <div class="row justify-content-end ">
                     <div class="col-md-7">
                         <div class="portfolio-img right">
-                            <img src="./assets/images/portfolio/market-planning.webp" />
+                            <img alt="market-planning" src="./assets/images/portfolio/market-planning.webp" />
                             <div class="overlay-text">
                                 <h4 class="text-white">Market Palnning</h4>
                                 <p class="site-text text-white hover-text">  We organizing and defining the marketing
@@ -114,7 +115,7 @@
                 <div class="row y-p-60 mb-y-p-30">
                     <div class="col-md-7">
                         <div class="portfolio-img">
-                            <img src="./assets/images/portfolio/idea-implementation.webp"/>
+                            <img alt="idea-implementation" src="./assets/images/portfolio/idea-implementation.webp" />
                             <div class="overlay-text">
                                 <h4 class="text-white">Ideas Implementation</h4>
                                 <p class="site-text text-white hover-text">  Our Managing ideas is a structured manner
@@ -126,7 +127,7 @@
                 <div class="row justify-content-end">
                     <div class="col-md-7">
                         <div class="portfolio-img right">
-                            <img src="./assets/images/portfolio/online-marketing.webp" />
+                            <img alt="online-marketing" src="./assets/images/portfolio/online-marketing.webp" />
                             <div class="overlay-text">
                                 <h4 class="text-white">Online Marketing</h4>
                                 <p class="site-text text-white hover-text">Our Marketing techniques and strategies use
@@ -169,13 +170,12 @@
         </section>
     </main>
     <footer class="footer p-60 mb-m-t-30">
-        <div class="footer-overlay">
+        <div class="footer-overlay relative">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-3 align-self-center">
                         <div class="about">
-                            <img src="./assets/images/footer-logo.svg" />
-
+                            <img alt="footer-logo" class="logo" src="./assets/images/footer-logo.svg" />
                         </div>
                     </div>
                     <div class="col-md-3 mb-m-t-40">
@@ -207,7 +207,7 @@
                         <div class=" footer-links">
                             <h3>Map Quick Links</h3>
                             <div class="relative map">
-                                <img src="./assets/images/map.png">
+                                <img alt="" src="./assets/images/map.png">
                                 <i class="fas fa-map-marker-alt usa">
                                     <p>USA</p>
                                 </i>
@@ -218,6 +218,7 @@
                         </div>
                     </div>
                 </div>
+                <button id="scrollToTopBtn"><i class="fas fa-arrow-up"></i></button>
             </div>
         </div>
         <div class="footer-overlay m-t-40 mb-m-t-20 gap-12 flex aic jcsb mb-fdc">
@@ -315,6 +316,19 @@
             });
         })
     </script>
+    <script>
+        var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        var rootElement = document.documentElement;
+    
+        function scrollToTop() {
+          // Scroll to top logic
+          rootElement.scrollTo({
+            top: 0,
+            behavior: "smooth"
+          });
+        }
+        scrollToTopBtn.addEventListener("click", scrollToTop);
+      </script>
 </body>
 
 </html>

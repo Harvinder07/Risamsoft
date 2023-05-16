@@ -97,9 +97,18 @@ a.btn:hover{
     background-color: var(--secondaryColor);
     color: var(--white);
 }
+.primary:hover{
+    color: #fff;
+}
+.navbar-toggler-icon{
+    height: auto;
+}
 .secondary{
     border: 1px solid var(--secondaryColor);
     background-color: transparent;
+    color: var(--secondaryColor);
+}
+.secondary:hover{
     color: var(--secondaryColor);
 }
 .heading{
@@ -390,7 +399,7 @@ a.btn:hover{
 }
 
 div > .img-fluid{
-    height: 620px;
+    height: 100%;
     object-fit: cover;
 }
 .themebg{
@@ -415,7 +424,6 @@ div > .img-fluid{
 }
 .image-overlay .section-heading{
     text-transform: uppercase;
-    white-space: pre-line;
 }
 .image-overlay p i{
     margin-right: 10px;
@@ -501,6 +509,28 @@ div > .hauto{
 .whatsapp img{
     width: 24px;
 }
+#scrollToTopBtn {
+    background-color: #fff;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 48px;
+    width: 48px;
+    position: absolute;
+    right: 24px;
+    bottom: 0;
+    font-size: 24px;
+    border-radius: 50px;
+  }
+@media(min-width: 768px) and (max-width: 1199px){
+    .footer-overlay{
+        padding: 30px 0;
+    }
+    .footer .logo{
+        width: 100%;
+    }
+}
 @media(max-width: 1380px){
     .slick-slide img, .slick-slide img.img-fluid{
         width: 100%;
@@ -518,7 +548,7 @@ div > .hauto{
         padding-right: 12px;
     }
     .footer-overlay{
-        padding: 30px;
+        padding: 30px 0;
     }
     .footer{
         padding: 30px;
@@ -535,10 +565,15 @@ div > .hauto{
         margin: 0 -16px;
         padding: 0 24px;
     }
+    .footer .logo{
+        width: 100%;
+    }
     
 }
 @media(max-width: 767px){
-
+    .navbar-brand > img{
+        width: 150px;
+    }
     .mb-fdc{
         flex-direction: column;
     }
@@ -560,9 +595,7 @@ div > .hauto{
     .mb-p-0{
         padding: 0;
     }
-    ./*mb-p-r-0{
-        padding-right: 0;
-    }*/
+
     .mb-p-b-0{
         padding-bottom: 0;
     }

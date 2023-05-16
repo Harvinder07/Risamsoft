@@ -20,7 +20,7 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"
-            ><img src="./assets/images/riamsoft.svg"
+            ><img alt= "" src="./assets/images/riamsoft.svg"
           /></a>
           <button
             class="navbar-toggler"
@@ -87,19 +87,19 @@
                     Contact Us & Reach!! Speak to Our Experts today
                   </h3>
                   <div class="text-center m-t-60 mb-m-t-30">
-                    <img class="icon" src="./assets/images/location.svg" />
+                    <img alt= "" class="icon" src="./assets/images/location.svg" />
                     <p class="m-t-10 section-heading">
                       5005 W Royal ln, suite 148 Irving tX 75063.
                     </p>
                   </div>
                   <div class="text-center m-t-40 mb-m-t-30">
-                    <img class="icon" src="./assets/images/telephone.svg" />
+                    <img alt= "" class="icon" src="./assets/images/telephone.svg" />
                     <a class="m-t-10 section-heading" href="#"
                       >+1(469)524-3401
                     </a>
                   </div>
                   <div class="text-center m-t-40 mb-m-t-30">
-                    <img class="icon" src="./assets/images/mail.svg" />
+                    <img alt= "" class="icon" src="./assets/images/mail.svg" />
                     <a class="m-t-10 section-heading" href="#"
                       >info@risamsoft.com</a
                     >
@@ -158,7 +158,7 @@
           <div class="row">
             <div class="col-md-3">
               <div class="about">
-                <img src="./assets/images/footer-logo.svg" />
+                <img alt= "" src="./assets/images/footer-logo.svg" />
                 <p>
                   Our goal is to effectively supply our clients with cutting
                   edge technology solutions.
