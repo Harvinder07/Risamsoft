@@ -23,7 +23,14 @@
     z-index: 3;
     text-align: center;
 }
-
+.progress-section {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.primary{
+    max-width: max-content;
+}
 .customer-multiduties .site-text{
     width: 70%;
 }
