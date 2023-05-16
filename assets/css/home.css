@@ -6,6 +6,12 @@
     word-break: break-word;
     text-transform: uppercase;
 }
+
+.header-heading{
+    white-space: pre-line;
+    word-break: break-word;
+    text-transform: uppercase;
+}
 .relative{
     position: relative;
 }
@@ -125,7 +131,7 @@ div[class*=circle]{
     margin-top: 40px;
 }
 .services img{
-    width: 90%;
+    width: 100%;
     height: 600px;
     object-fit: cover;
 }
@@ -203,6 +209,13 @@ div[class*=circle]{
         white-space: normal;
         word-break: normal;
         font-size: 42px;
+        
+    }
+    .header-heading{
+        white-space: normal;
+        word-break: normal;
+        font-size: 42px;
+        margin-top: 44px;
     }
     .carousel-banner .slick-dots{
         justify-content: center;
@@ -239,6 +252,10 @@ div[class*=circle]{
         height: auto;
     }
     .heading{
+        line-height: 1.25;
+        font-size: var( --mob-display);
+    }
+    .heading-{
         line-height: 1.25;
         font-size: var( --mob-display);
     }
